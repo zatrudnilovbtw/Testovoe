@@ -1,0 +1,27 @@
+/* src/components/layout/Path/Path.module.css */
+.pathContainer{
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    border-bottom: 1px solid #E0E0E0;
+    font-size: 14px;
+    color: #666;
+}
+
+.pathItem {
+    display: flex;
+    align-items: center;
+}
+
+.arrowIcon {
+    margin: 0 8px;
+}
+
+.pathLink {
+    color: #666;
+    text-decoration: none;
+}
+
+.pathLink:hover {
+    color: #333;
+}

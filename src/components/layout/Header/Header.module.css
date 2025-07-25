@@ -1,0 +1,72 @@
+.headerContainer{
+    height: 86px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #DBE5F2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 51px;
+    justify-content: space-between;
+}
+.buttonContainer{
+    width: 166px;
+    height: 40px;
+    background-color: #F0F0F0;
+    color: #303235;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    gap: 8px;
+    cursor: pointer;
+}
+.buttonIcon{
+    display: flex;
+    align-items: center;
+}
+.workersName{
+    color: #303235;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 0 30px;
+    display: flex; 
+    align-items: center;
+    flex-grow: 1;
+}
+.chain{
+    padding-left: 16px;
+    cursor: pointer;
+}
+.rightSide{
+    display: flex; 
+    align-items: center;
+    gap: 17px;
+}
+.select{
+    color: #5B6283;
+    width: 200px;
+    height: 40px;
+    border: solid 1px #B7C6DB;
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-right: 8px;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235B6283' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 16px;
+    cursor: pointer;
+}
+
+.userContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.userName{
+    color: #5B6283;
+    font-size: 16px;
+}

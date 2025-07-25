@@ -1,0 +1,27 @@
+/* src/components/employees/EmployeeHero/EmployeeHero.module.css */
+.EmployeeHeroSection{
+    margin-top: 18px;
+    height: auto;
+    border-bottom: 1px solid #B7C6DB;
+    padding: 24px;
+}
+
+.heroContent {
+    display: flex;
+    flex-direction: row;
+}
+
+.infoBlock {
+    margin-left: 19px;
+    width: 340px;
+}
+
+.documentsBlock {
+    margin-left: 15px;
+    width: 350px;
+}
+
+.careerBlock {
+    margin-left: 20px;
+    width: 350px;
+}

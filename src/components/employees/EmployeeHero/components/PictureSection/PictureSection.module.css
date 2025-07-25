@@ -1,0 +1,26 @@
+.PictureSection{
+    padding-left: 24px;
+}
+
+.imageContainer {
+    position: relative;
+    width: 280px;
+    height: 280px;
+}
+
+.profileImage {
+    border-radius: 4px;
+}
+
+.editIconContainer {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+} 
