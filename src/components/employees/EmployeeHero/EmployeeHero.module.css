@@ -9,19 +9,43 @@
 .heroContent {
     display: flex;
     flex-direction: row;
+    gap: 0;
+    max-width: 100%; /* Ограничиваем максимальную ширину */
+    flex-wrap: wrap; /* Разрешаем перенос на новую строку при необходимости */
 }
 
 .infoBlock {
     margin-left: 19px;
     width: 340px;
+    flex: 0 0 auto;
+    margin-bottom: 20px; /* Отступ снизу при переносе */
 }
 
 .documentsBlock {
     margin-left: 15px;
     width: 350px;
+    flex: 0 0 auto;
+    margin-bottom: 20px; /* Отступ снизу при переносе */
 }
 
 .careerBlock {
     margin-left: 20px;
     width: 350px;
+    flex: 0 0 auto;
+    margin-bottom: 20px; /* Отступ снизу при переносе */
+}
+
+/* Медиа-запрос для экранов меньше 1600px */
+@media (max-width: 1600px) {
+    .heroContent {
+        justify-content: flex-start;
+    }
+}
+
+/* Медиа-запрос для экранов меньше 1400px */
+@media (max-width: 1400px) {
+    .careerBlock {
+        margin-left: 0;
+        margin-top: 15px;
+    }
 }

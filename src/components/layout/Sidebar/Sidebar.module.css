@@ -1,8 +1,11 @@
 .sidebar {
     width: 320px;
+    min-width: 320px; /* Фиксированная минимальная ширина */
     height: 100vh;
     color: white;
     position: relative;
+    overflow-y: auto; /* Добавляем вертикальную прокрутку при необходимости */
+    overflow-x: hidden; /* Предотвращаем горизонтальную прокрутку */
   }
   
   .divider {

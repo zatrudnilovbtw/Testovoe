@@ -1,0 +1,38 @@
+.ButtonsWrapper{
+    margin-top: 34px;    
+    margin-left: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.btn{
+    height: 30px;
+    width: auto;
+    border-radius: 4px;
+    background-color: #F0F0F0;
+    color: #303235;
+    margin-right: 12px;
+    padding-right: 12px;
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.active {
+    background-color: #303235;
+    color: #FFFFFF;
+}
+
+.tabCount {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 8px;
+    font-size: 14px;
+    font-weight: 600;
+}

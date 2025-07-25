@@ -6,11 +6,30 @@
     padding: 0;
     text-decoration: none;
     font-family: "Inter", sans-serif;
+    box-sizing: border-box;
 }
 ul {
     list-style-type: none;
-  }
+}
   
-  li {
+li {
     list-style-type: none;
-  }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.flex {
+    display: flex;
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.flex-1 {
+    flex: 1;
+    min-width: 0; /* Предотвращает выход контента за пределы контейнера */
+    overflow-x: hidden; /* Предотвращает горизонтальную прокрутку */
+}
