@@ -36,6 +36,7 @@ export interface Employee{
         organization: string;
         subdivision: string;
         employmentDate: string;
+        brigade: string;
     };
     appeals?: {
         id: string;
@@ -101,9 +102,10 @@ export const employees: Employee[] = [
         career: {
             tabNumber: '0000-000000',
             position: 'машинист тепловоза',
-            department: 'ПТЛО',
+            department: 'G710',
             organization: 'ООО «Ромашка»',
             subdivision: 'Цех ремонта и эксплуатации локомотивов',
+            brigade: 'Служба эксплуатации локомотивов',
             employmentDate: '20.07.2014'
         },
         appeals: [

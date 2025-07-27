@@ -145,12 +145,15 @@
   .active {
     color: #5B6283;
     font-weight: 400;
+    opacity: 50;
+
+
   }
   
   .indicator {
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     background-color: #F57F29;
     border-radius: 50%;
-    margin-left: 10px;
+    margin-left: 5px;
   }

@@ -51,11 +51,11 @@ export default function Sidebar() {
           <li className={styles.navItem}>
             <span className={styles.mainItem}>Работники</span>
           </li>
-          <li className={styles.navItem}>
-            <a href="/employees" className={`${styles.subItem} ${styles.active}`}>
+          <li className={`${styles.subItem} ${styles.active} `}>
+            
               База работников
-              {/* <span className={styles.indicator}></span> */}
-            </a>
+              <span className={styles.indicator}></span>
+            
           </li>
           <li className={`${styles.navItem} ${styles['block-end']}`}>
             <span className={styles.subItem}>Карьерные записи</span>

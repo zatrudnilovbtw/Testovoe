@@ -1,0 +1,75 @@
+.TableOfContent {
+    margin-top: 21px;
+    margin-left: 24px;
+}
+
+.btnAdd {
+    height: 30px;
+    width: auto;
+    border-radius: 4px;
+    background-color: #303235;
+    color: #FFFFFF;
+    padding: 0 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.table {
+    width: 1525px;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.tableHeader {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #D9E1EC;
+    background-color: #F0F0F0;
+    color: #5B6283;
+    font-weight: 400;
+    position: relative;
+}
+
+.tableRow:hover {
+    background-color: #f5f5f5;
+}
+
+.tableCell {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #D9E1EC;
+    color: #717171;
+    font-size: 12px;
+}
+
+.statusInwork {
+    background-color: #DDFFCA;
+    color: #469518;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.statusDone {
+    background-color: #CAE6FF;
+    color: #274C6D;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.filterIcon {
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
