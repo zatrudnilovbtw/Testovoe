@@ -1,6 +1,75 @@
-.PersonalDocs{
+.PersonalDocs {
     width: 350px;
     height: 411px;
     border-radius: 4px;
     border: 1px solid #D7DBEC;
+    background: #ffffff;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #1A2B49;
+    margin: 0;
+}
+
+.headerBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.imageContainer {
+    padding-top: 2px;
+    cursor: pointer;
+}
+
+.infoSection {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    row-gap: 1px;
+}
+
+.label {
+    font-size: 12px;
+    color: #5A607F;
+    padding-bottom: 10px;
+    opacity: 0.6;
+}
+
+.value {
+    font-size: 12px;
+    color: #5A607F;
+    margin-left: 67px;
+}
+
+/* исправленный блок */
+.rowWithIcon {
+    display: flex;
+    align-items: center;
+    gap: 7px; /* расстояние между текстом и иконкой */
+    font-size: 12px;
+    color: #5A607F;
+    margin-left: 67px; /* тот же отступ, что и у .value */
+}
+
+.copyIcon {
+    cursor: pointer;
+}
+
+
+.btn {
+    background-color: #303235;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    width: 87px;
+    height: 24px;
+    border-radius: 2px;
+    margin-top: 65px;
+    cursor: pointer;
 }

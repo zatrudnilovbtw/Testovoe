@@ -1,6 +1,112 @@
-.PersonalCareer{
+.PersonalCareer {
     width: 501px;
     height: 411px;
     border-radius: 4px;
     border: 1px solid #D7DBEC;
+    background: #ffffff;
+    padding: 16px;
+    box-sizing: border-box;
 }
+
+.title {
+    font-weight: 500;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #1A2B49;
+    margin: 0;
+}
+
+.headerBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.workContainer {
+    padding-top: 2px;
+    cursor: pointer;
+    color: #5A607F;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.indicator {
+    width: 8px;
+    height: 8px;
+    background-color: #20B22A;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 4px;
+}
+
+.infoSection {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    row-gap: 1px;
+}
+
+.label {
+    font-size: 12px;
+    color: #5A607F;
+    padding-bottom: 10px;
+    opacity: 0.6; /* Fixed opacity value to valid CSS */
+}
+
+.value {
+    font-size: 12px;
+    color: #5A607F;
+    margin-left: 67px;
+}
+
+.rowWithIcon {
+    display: flex;
+    align-items: center;
+    gap: 7px; /* расстояние между текстом и иконкой */
+    font-size: 12px;
+    color: #5A607F;
+    margin-left: 67px; /* тот же отступ, что и у .value */
+}
+
+.copyIcon {
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    margin-top: 40px;
+    gap: 9px; /* 9px gap between buttons */
+}
+
+.addBtn {
+    width: 130px;
+    height: 24px; /* чуть выше для удобства */
+    background-color: #303235;
+    color: #ffffff;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 2px;
+}
+
+
+
+.allRecordsBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* расстояние между иконкой и текстом */
+    padding: 0 12px;
+    height: 24px;
+    border: 1px solid #303235;
+    border-radius: 2px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #303235;
+}
+
+
+

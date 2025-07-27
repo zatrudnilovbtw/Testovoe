@@ -15,10 +15,10 @@ export default function EmployeeHero(){
                 <PersonalInfo employee={employee} />
                 </div>
                 <div className={styles.documentsBlock}>
-                <PersonalDocs/>
+                <PersonalDocs employee={employee}/>
                 </div>
                 <div className={styles.careerBlock}>
-                <PersonalCareer/>
+                <PersonalCareer employee={employee}/>
                 </div>
             </div>
         </div>

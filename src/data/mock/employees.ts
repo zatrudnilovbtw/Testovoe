@@ -16,6 +16,7 @@ export interface Employee{
         };
         email?: string;
         address: string;
+
     };
     documents?: {
         type: string;
@@ -37,6 +38,8 @@ export interface Employee{
         subdivision: string;
         employmentDate: string;
         brigade: string;
+        harmfulFactors:number[];
+        records: number;
     };
     appeals?: {
         id: string;
@@ -50,22 +53,6 @@ export interface Employee{
         creator: string;
     }[];
 }
-export interface Tab {
-    id: string;
-    name: string;
-    count: number;
-  }
-  export const employeeTabs: Tab[] = [
-    { id: 'appeals', name: 'Обращения', count: 5 },
-    { id: 'sick-leaves', name: 'Больничные листы', count: 4 },
-    { id: 'conclusions', name: 'Заключения', count: 3 },
-    { id: 'referrals', name: 'Направления', count: 3 },
-    { id: 'occupational-diseases', name: 'Профзаболевания', count: 1 },
-    { id: 'disability', name: 'Инвалидность', count: 1 },
-    { id: 'calendar', name: 'Календарный план', count: 3 },
-    { id: 'surveys', name: 'Анкеты', count: 2 },
-    { id: 'general', name: 'Общие показатели', count: 2 }
-  ];
 
 export const employees: Employee[] = [
     {
@@ -106,7 +93,9 @@ export const employees: Employee[] = [
             organization: 'ООО «Ромашка»',
             subdivision: 'Цех ремонта и эксплуатации локомотивов',
             brigade: 'Служба эксплуатации локомотивов',
-            employmentDate: '20.07.2014'
+            employmentDate: '20.07.2014',
+            harmfulFactors: [1.1, 1.3, 1.39, 1.1, 1.39],
+            records:4
         },
         appeals: [
             {
@@ -167,3 +156,20 @@ export const employees: Employee[] = [
         ]
     }
 ]
+export interface Tab {
+    id: string;
+    name: string;
+    count: number;
+  }
+  export const employeeTabs: Tab[] = [
+    { id: 'appeals', name: 'Обращения', count: 5 },
+    { id: 'sick-leaves', name: 'Больничные листы', count: 4 },
+    { id: 'conclusions', name: 'Заключения', count: 3 },
+    { id: 'referrals', name: 'Направления', count: 3 },
+    { id: 'occupational-diseases', name: 'Профзаболевания', count: 1 },
+    { id: 'disability', name: 'Инвалидность', count: 1 },
+    { id: 'calendar', name: 'Календарный план', count: 3 },
+    { id: 'surveys', name: 'Анкеты', count: 2 },
+    { id: 'general', name: 'Общие показатели', count: 2 }
+  ];
+
