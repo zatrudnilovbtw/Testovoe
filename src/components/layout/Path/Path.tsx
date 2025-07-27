@@ -4,7 +4,6 @@ import Image from 'next/image'
 import arrowRight from '@/public/Images/arrowRight.svg';
 
 export default function Path(){
-    // Захардкоженный путь для демонстрации
     const pathSegments = [
         { name: 'Работники', href: '/employees' },
         { name: 'База работников', href: '/employees' },

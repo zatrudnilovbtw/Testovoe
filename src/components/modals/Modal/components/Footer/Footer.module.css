@@ -1,0 +1,57 @@
+.footerDataContainer {
+    position: relative;
+    min-height: 70px;
+    border-top: 1px solid #D9E1EC;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 25px;
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+.btnWrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+
+.addBtn {
+    background-color: #303235;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+.redactBtn {
+    background-color: #F0F0F0;
+    color: #303235;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.rejectBtn {
+    color: #303235;
+    padding: 8px 16px;
+    border: 1px solid #303235;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+

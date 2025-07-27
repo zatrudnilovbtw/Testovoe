@@ -3,10 +3,8 @@ import Image from 'next/image';
 import copyicon from '@/public/Images/copyicon.svg';
 import personBtn from '@/public/Images/personBtn.svg';
 import { Employee } from '@/data/mock/employees';
+import { PersonalCareerProps } from '@/types/props';
 
-interface PersonalCareerProps {
-    employee: Employee;
-}
 
 export default function PersonalCareer({ employee }: PersonalCareerProps) {
     const { career } = employee;

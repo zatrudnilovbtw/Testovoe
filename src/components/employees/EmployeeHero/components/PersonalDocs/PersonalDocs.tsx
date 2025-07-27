@@ -1,16 +1,31 @@
+'use client'; // Указываем, что это клиентский код
 import styles from './PersonalDocs.module.css'
 import Image from 'next/image';
 import editcard from '@/public/Images/editcard.svg';
 import copyicon from '@/public/Images/copyicon.svg';
-
 import { Employee } from '@/data/mock/employees';
+import { Modal } from '@/components/modals/Modal/Modal'
+import { useModal } from '@/hooks/useModal';
+import { PersonalDocsProps } from '@/types/props';
+import AddModal from '@/components/modals/AddModal/AddModal';
+import React from 'react';
 
-interface PersonalDocsProps {
-    employee: Employee;
-}
 
 export default function PersonalDocs({ employee }: PersonalDocsProps) {
     const { documents } = employee;
+    const [isModalOpen, setModalOpen] = React.useState(false);
+    const [isAddModalOpen, setAddModalOpen] = React.useState(false);
+
+    const openModal = () => setModalOpen(true);
+    const closeModal = () => setModalOpen(false);
+    const openAddModal = () => {
+        setModalOpen(false);
+        setAddModalOpen(true);
+    };
+    const closeAddModal = () => {
+        setAddModalOpen(false);
+        setModalOpen(false); 
+    };
 
     return (
         <div className={styles.PersonalDocs}>
@@ -65,7 +80,21 @@ export default function PersonalDocs({ employee }: PersonalDocsProps) {
                 <span className={styles.value}>{documents?.dmsNumber}</span>
             </div>
 
-            <button className={styles.btn}>Подробнее</button>
+            <button className={styles.btn} onClick={openModal}>
+        Подробнее
+      </button>
+
+            {isModalOpen && (
+                <Modal
+                    isOpen={isModalOpen}
+                    onClose={closeModal}
+                    employee={employee}
+                    onAddClick={openAddModal}
+                />
+            )}
+            {isAddModalOpen && (
+                <AddModal isOpen={isAddModalOpen} onClose={closeAddModal} />
+            )}
         </div>
     )
 }

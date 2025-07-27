@@ -6,7 +6,7 @@ import PersonalCareer from './components/PersonalCareer/PersonalCareer'
 import { employees } from '@/data/mock/employees';
 
 export default function EmployeeHero(){
-    const employee = employees[0]; // Берем первого сотрудника из массива
+    const employee = employees[0]; 
     return(
         <div className={styles.EmployeeHeroSection}>
             <div className={styles.heroContent}>

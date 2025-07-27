@@ -1,11 +1,11 @@
 .sidebar {
     width: 320px;
-    min-width: 320px; /* Фиксированная минимальная ширина */
+    min-width: 320px; 
     height: 100vh;
     color: white;
     position: relative;
-    overflow-y: auto; /* Добавляем вертикальную прокрутку при необходимости */
-    overflow-x: hidden; /* Предотвращаем горизонтальную прокрутку */
+    overflow-y: auto; 
+    overflow-x: hidden; 
   }
   
   .divider {
@@ -85,7 +85,6 @@
   .navigation{
     padding-top: 30px;
     padding-left: 25px;
-    /* From Figma specs */
     display: flex;
     flex-direction: column;
     align-items: flex-start;

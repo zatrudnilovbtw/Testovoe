@@ -1,4 +1,4 @@
-export interface Employee{
+export interface Employee {
     id: number;
     fullName: string;
     personalInfo?: {
@@ -29,6 +29,10 @@ export interface Employee{
         inn?: string;
         omsNumber?: string;
         dmsNumber?: string;
+        Insurancecompany: string;
+        duration: string;
+        registration: string;
+        actualplace: string;
     };
     career?: {
         tabNumber: string;
@@ -38,7 +42,7 @@ export interface Employee{
         subdivision: string;
         employmentDate: string;
         brigade: string;
-        harmfulFactors:number[];
+        harmfulFactors: number[];
         records: number;
     };
     appeals?: {
@@ -84,7 +88,15 @@ export const employees: Employee[] = [
             snils: '000-000-000 00',
             inn: '00 00 000000 00',
             omsNumber: '0000000000000000',
-            dmsNumber: '0000000000000000'
+            dmsNumber: '0000000000000000',
+            Insurancecompany: 'Альфа-Страхование',
+            duration: 'До 2027 года',
+            registration: 'г. Нижний Тагил,ул. Уличная, д.12, кв. 62',
+            actualplace: 'г. Нижний Тагил,ул. Уличная, д.12, кв. 62',
+
+
+
+
         },
         career: {
             tabNumber: '0000-000000',
@@ -95,12 +107,12 @@ export const employees: Employee[] = [
             brigade: 'Служба эксплуатации локомотивов',
             employmentDate: '20.07.2014',
             harmfulFactors: [1.1, 1.3, 1.39, 1.1, 1.39],
-            records:4
+            records: 4
         },
         appeals: [
             {
-                id: '000-000',
-                medcardNumber: 'АА 000 000',
+                id: '000-001',
+                medcardNumber: 'АА 000 001',
                 type: 'Амбулаторный прием',
                 employee: 'Машинист тепловоза',
                 location: 'Здравпункт № 15',
@@ -110,8 +122,8 @@ export const employees: Employee[] = [
                 creator: 'Белова Е.Б.'
             },
             {
-                id: '000-000',
-                medcardNumber: 'АА 000 000',
+                id: '000-002',
+                medcardNumber: 'АА 000 002',
                 type: 'Оказание СМП',
                 employee: 'Машинист тепловоза',
                 location: 'Здравпункт № 15',
@@ -121,8 +133,8 @@ export const employees: Employee[] = [
                 creator: 'Белова Е.Б.'
             },
             {
-                id: '000-000',
-                medcardNumber: 'АА 000 000',
+                id: '000-003',
+                medcardNumber: 'АА 000 003',
                 type: 'Предсменный осмотр',
                 employee: 'Машинист тепловоза',
                 location: 'Здравпункт № 15',
@@ -132,8 +144,8 @@ export const employees: Employee[] = [
                 creator: 'Белова Е.Б.'
             },
             {
-                id: '000-000',
-                medcardNumber: 'АА 000 000',
+                id: '000-004',
+                medcardNumber: 'АА 000 004',
                 type: 'Вакцинация',
                 employee: 'Машинист тепловоза',
                 location: 'Здравпункт № 15',
@@ -143,8 +155,8 @@ export const employees: Employee[] = [
                 creator: 'Белова Е.Б.'
             },
             {
-                id: '000-000',
-                medcardNumber: 'АА 000 000',
+                id: '000-005',
+                medcardNumber: 'АА 000 005',
                 type: 'Послесменный осмотр',
                 employee: 'Машинист тепловоза',
                 location: 'Здравпункт № 15',
@@ -160,8 +172,8 @@ export interface Tab {
     id: string;
     name: string;
     count: number;
-  }
-  export const employeeTabs: Tab[] = [
+}
+export const employeeTabs: Tab[] = [
     { id: 'appeals', name: 'Обращения', count: 5 },
     { id: 'sick-leaves', name: 'Больничные листы', count: 4 },
     { id: 'conclusions', name: 'Заключения', count: 3 },
@@ -171,5 +183,4 @@ export interface Tab {
     { id: 'calendar', name: 'Календарный план', count: 3 },
     { id: 'surveys', name: 'Анкеты', count: 2 },
     { id: 'general', name: 'Общие показатели', count: 2 }
-  ];
-
+];

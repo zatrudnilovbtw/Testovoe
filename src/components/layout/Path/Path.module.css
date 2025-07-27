@@ -11,10 +11,11 @@
 .pathItem {
     display: flex;
     align-items: center;
+   
 }
 
 .arrowIcon {
-    margin: 0 8px;
+    margin: 8px;
 }
 
 .pathLink {

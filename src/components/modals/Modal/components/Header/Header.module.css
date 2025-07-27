@@ -1,0 +1,14 @@
+.modalHeader {
+    padding-bottom: 36px;
+    font-size: 24px;
+    position: relative; 
+  }
+  
+  .modalHeader::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -30px; 
+    right: -30px; 
+    border-bottom: 1px solid #D9E1EC;
+  }

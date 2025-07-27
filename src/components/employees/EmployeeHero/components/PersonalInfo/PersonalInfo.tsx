@@ -3,12 +3,8 @@ import Image from 'next/image';
 import editcard from '@/public/Images/editcard.svg';
 import phone from '@/public/Images/phone.svg';
 import copyicon from '@/public/Images/copyicon.svg';
-
+import { PersonalInfoProps } from '@/types/props';
 import { Employee } from '@/data/mock/employees';
-
-interface PersonalInfoProps {
-    employee: Employee;
-}
 
 export default function PersonalInfo({ employee }: PersonalInfoProps) {
     const { personalInfo } = employee;

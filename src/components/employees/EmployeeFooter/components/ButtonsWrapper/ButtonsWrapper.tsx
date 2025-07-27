@@ -4,10 +4,8 @@ import { useState } from 'react';
 import { employeeTabs } from '@/data/mock/employees';
 
 export default function ButtonsWrapper() {
-    // Состояние для отслеживания активного таба
     const [activeTab, setActiveTab] = useState('appeals');
 
-    // Обработчик клика по табу
     const handleTabClick = (tabId: string) => {
         setActiveTab(tabId);
     };
